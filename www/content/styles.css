@@ -298,6 +298,7 @@ a:active {
     font-size: 14px; /* Font size for footer text */
     border-top: 1px solid #333; /* Border at the top of the footer */
     text-align: center; /* Center align text */
+    position: relative; /* Relative positioning for the footer */
 }
 
 .footer-brand {
@@ -362,10 +363,15 @@ a:active {
 }
 
 .footer-bottom {
-    margin-top: 20px; /* Space above the bottom text */
+    margin-top: 40px; /* Increased space above the bottom text */
+    position: absolute; /* Position the footer-bottom */
+    bottom: 10px; /* Ensure it is at the bottom */
+    left: 0;
+    width: 100%; /* Make sure it stretches the full width */
 }
 
 .footer-bottom p {
     font-size: 12px; /* Smaller font size for copyright text */
     color: #888; /* Lighter gray color for copyright text */
+    margin: 0; /* Remove margin for a cleaner look */
 }
